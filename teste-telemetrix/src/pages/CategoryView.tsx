@@ -1,3 +1,4 @@
+import Header from "../components/header/Header";
 import Navbar from "../components/navbar/Navbar";
 import Sidebar from "../components/sidebar/Sidebar"
 import './style.css';
@@ -19,6 +20,7 @@ function CategoryView() {
       </div>
       <div className="content">
         <Navbar/>
+        <Header />
       </div>
     </div>
   )
