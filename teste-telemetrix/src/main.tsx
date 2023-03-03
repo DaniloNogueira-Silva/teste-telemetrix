@@ -12,11 +12,11 @@ import CategoryView from './pages/CategoryView';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/product',
     element: <ProductView/>,
   },
   {
-    path: '/category',
+    path: '/',
     element: <CategoryView />,
   }
 ])

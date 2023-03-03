@@ -1,15 +1,25 @@
+import Navbar from "../components/navbar/Navbar";
+import Sidebar from "../components/sidebar/Sidebar"
+import './style.css';
 
 function CategoryView() {
-  return (
-    <div className="container-fluid">
-            <div className="row flex-nowrap">
-                <div className="col">
 
-                </div>
-                <div className="col">
-                  
-                </div>
-            </div>
+  $(".open-btn").on('click', function(){
+    $(".sidebar").addClass("active")
+  })
+
+  $(".close-btn").on('click', function(){
+    $(".sidebar").removeClass("active")
+  })
+
+  return (
+    <div className="main-container d-flex">
+      <div className="sidebar" id="side-nav">
+        <Sidebar />
+      </div>
+      <div className="content">
+        <Navbar/>
+      </div>
     </div>
   )
 }
