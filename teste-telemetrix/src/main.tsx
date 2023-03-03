@@ -7,18 +7,17 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 //Page
-import ProductView from './routes/productView';
+import ProductView from './pages/productView';
+import CategoryView from './pages/CategoryView';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>,
-    children: [
-      {
-        path: '/',
-        element: <ProductView/>,
-      }
-    ]
+    element: <ProductView/>,
+  },
+  {
+    path: '/category',
+    element: <CategoryView />,
   }
 ])
 
