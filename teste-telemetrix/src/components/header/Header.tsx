@@ -5,6 +5,23 @@ function Header() {
 
         <div className="col-md-10 m-auto">
             <div className="row">
+            <div className="col-xl-3 col-lg-6">
+                    <div className="card l-bg-blue-dark">
+                        <div className="card-statistic-3 p-4">
+                            <div className="card-icon card-icon-large"><i className="fas fa-users"></i></div>
+                            <div className="mb-4">
+                                <h5 className="card-title mb-0">Bem vindo</h5>
+                            </div>
+                            <div className="row align-items-center mb-2 d-flex">
+                                <div className="col-8">
+                                    <h2 className="d-flex align-items-center mb-0">
+                                        Vitor
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="col-xl-3 col-lg-6">
                     <div className="card l-bg-cherry">
                         <div className="card-statistic-3 p-4">
@@ -20,23 +37,6 @@ function Header() {
                                 </div>
                                 <div className="col-4 text-right">
                                     <span>12.5% <i className="fa fa-arrow-up"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-lg-6">
-                    <div className="card l-bg-blue-dark">
-                        <div className="card-statistic-3 p-4">
-                            <div className="card-icon card-icon-large"><i className="fas fa-users"></i></div>
-                            <div className="mb-4">
-                                <h5 className="card-title mb-0">Bem vindo</h5>
-                            </div>
-                            <div className="row align-items-center mb-2 d-flex">
-                                <div className="col-8">
-                                    <h2 className="d-flex align-items-center mb-0">
-                                        Vitor
-                                    </h2>
                                 </div>
                             </div>
                         </div>

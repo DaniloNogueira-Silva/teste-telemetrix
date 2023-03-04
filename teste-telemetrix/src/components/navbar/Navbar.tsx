@@ -3,9 +3,13 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
 
-    $(".open-btn").on('click', function(){
-        $(".sidebar").addClass("active")
-    })
+  $(".open-btn").on('click', function(){
+    $(".sidebar").addClass("active")
+  })
+
+  $(".close-btn").on('click', function(){
+    $(".sidebar").removeClass("active")
+  })
 
   return (
     <>
