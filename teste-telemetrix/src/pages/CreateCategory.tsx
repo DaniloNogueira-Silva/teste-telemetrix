@@ -1,11 +1,10 @@
-import Header from "../components/header/Header";
 import Navbar from "../components/navbar/Navbar";
-import SearchProduct from "../components/searchProduct/SearchProduct";
 import Sidebar from "../components/sidebar/Sidebar"
-import TableProduct from "../components/table/TableProduct";
+import FormCategory from "../components/form/FormCategory";
+
 import './style.css';
 
-function ProductView() {
+function CreateCategory() {
 
   $('.sidebar ul li').one('click', function(){
     $('.sidebar ul li.active').removeClass('active');
@@ -27,12 +26,10 @@ function ProductView() {
       </div>
       <div className="content">
         <Navbar/>
-        <Header />
-        <SearchProduct />
-        <TableProduct />
+        <FormCategory />
       </div>
     </div>
   )
 }
 
-export default ProductView
+export default CreateCategory
