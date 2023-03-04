@@ -9,8 +9,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 //Page
 import ProductView from './pages/productView';
 import CategoryView from './pages/CategoryView';
+import CreateCategory from './pages/CreateCategory';
+import CreateProduct from './pages/CreateProduct';
 
 const router = createBrowserRouter([
+  //tables
   {
     path: '/product',
     element: <ProductView/>,
@@ -18,6 +21,16 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <CategoryView />,
+  },
+
+  //forms
+  {
+    path: '/category/create',
+    element: <CreateCategory />,
+  },
+  {
+    path: '/product/create',
+    element: <CreateProduct />,
   }
 ])
 
