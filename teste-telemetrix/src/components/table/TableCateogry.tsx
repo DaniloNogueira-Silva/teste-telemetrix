@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { CategoryProps } from '../../types/category';
+import "./Table.css"
 
 function TableCateogry() {
 
@@ -34,11 +35,11 @@ function TableCateogry() {
                     <table className="table align-items-center mb-0">
                         <thead>
                             <tr>
-                                <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
-                                <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nome</th>
-                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Limite de Requisição</th>
-                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Variação de Valor</th>
-                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Ações</th>
+                                <th className="text-uppercase  text-xxs font-weight-bolder opacity-7">ID</th>
+                                <th className="text-uppercase  text-xxs font-weight-bolder opacity-7">Nome</th>
+                                <th className="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Limite de Requisição</th>
+                                <th className="text-center text-uppercase  text-xxs font-weight-bolder opacity-7">Variação de Valor</th>
+                                <th className="text-center text-uppercase text-xxs font-weight-bolder opacity-7">Ações</th>
                             </tr>
                         </thead>
                         <tbody>

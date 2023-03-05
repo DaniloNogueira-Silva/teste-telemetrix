@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CategoryProps } from '../../types/category'
+import "./Form.css"
 
 function FormCategory() {
 
@@ -26,9 +27,9 @@ function FormCategory() {
         <div>
             <div className="container col-md-6">
 
-                <form onClick={saveCategory} className="form-control mt-5 ">
+                <form onClick={saveCategory} className="form-control mt-5 shadow-lg p-3 mb-5 bg-body rounded">
 
-                    <h3 className='text-center'>Cadastrar categoria: </h3>
+                    <h2 className='text-center mt-2 mb-3 font-weight-bold'>CADASTRAR CATEGORIA: </h2>
 
 
                     <div className="form-outline mb-2">
@@ -51,7 +52,7 @@ function FormCategory() {
                         <label className="form-label">Valor de variação</label>
                     </div>
 
-                    <button className="button btn btn-primary mb-3 w-100">Salvar</button>
+                    <button className="button btn mb-3 w-100">Salvar</button>
                 </form>
             </div>
         </div>

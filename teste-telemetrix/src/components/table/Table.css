@@ -1,0 +1,10 @@
+.btn-danger {
+    background: linear-gradient(to right, #b90101, #ff0000) !important;
+    color: #fff;
+}
+
+
+th{
+    background-color: #919191 !important;
+    color: black !;
+}

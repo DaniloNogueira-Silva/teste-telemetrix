@@ -25,9 +25,10 @@ function FormProduct() {
         <div>
             <div className="container col-md-6">
 
-                <form onClick={saveProduct} className="form-control mt-5 ">
+                <form onClick={saveProduct} className="form-control mt-5 shadow-lg p-3 mb-5 bg-body rounded ">
 
-                    <h3 className='text-center'>Cadastrar Produto: </h3>
+                <h2 className='text-center mt-2 mb-3 font-weight-bold'>CADASTRAR PRODUTO: </h2>
+
 
 
                     <div className="form-outline mb-2">
