@@ -1,6 +1,37 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { CategoryProps } from "../../types/category";
+import { ProductProps } from "../../types/product";
 import "./Header.css"
 
 function Header() {
+
+    //CONECTAR COM CATEGORIA
+    const [categories, setCategories] = useState<CategoryProps>([]);
+
+    useEffect(() => {
+        getCategory();
+    }, []);
+
+    //connect api
+    const getCategory = async () => {
+        const response = await axios.get('http://200.169.68.106:9993/api/ProductCategory');
+        setCategories(response.data)
+    };
+
+    //CONECTAR COM PRODUTO
+    const [product, setProduct] = useState<ProductProps>([]);
+
+    useEffect(() => {
+        getProduct();
+    }, []);
+
+    //connect api
+    const getProduct = async () => {
+        const response = await axios.get('http://200.169.68.106:9993/api/Product');
+        setProduct(response.data)
+    };
+
     return (
 
         <div className="col-md-10 m-auto">
@@ -32,7 +63,7 @@ function Header() {
                             <div className="row align-items-center mb-2 d-flex">
                                 <div className="col-8">
                                     <h2 className="d-flex align-items-center mb-0">
-                                        3,243
+                                        {categories.length}
                                     </h2>
                                 </div>
                                 <div className="col-4 text-right">
@@ -52,7 +83,7 @@ function Header() {
                             <div className="row align-items-center mb-2 d-flex">
                                 <div className="col-8">
                                     <h2 className="d-flex align-items-center mb-0">
-                                        578
+                                        {product.length}
                                     </h2>
                                 </div>
                                 <div className="col-4 text-right">
