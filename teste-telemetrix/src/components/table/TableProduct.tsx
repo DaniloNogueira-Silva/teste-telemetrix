@@ -60,10 +60,10 @@ function TableCateogry() {
                                         <span className="text-xs font-weight-bold mb-0">{product.description}</span>
                                     </td>
                                     <td className="align-middle text-center">
-                                        <span className="text-secondary text-xs font-weight-normal">{product.icmsTax}</span>
+                                        <span className="text-secondary text-xs font-weight-normal">{product.icmsTax}%</span>
                                     </td>
                                     <td className="align-middle text-center">
-                                        <span className="text-secondary text-xs font-weight-normal">{product.ipiTax}</span>
+                                        <span className="text-secondary text-xs font-weight-normal">{product.ipiTax}%</span>
                                     </td>
                                     <td className="text-center">
                                         <a onClick={() => deleteProduct(product.id)} className="btn btn-danger">Deletar</a>

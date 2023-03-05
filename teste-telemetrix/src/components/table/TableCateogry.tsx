@@ -59,7 +59,7 @@ function TableCateogry() {
                                         <span className="text-xs font-weight-bold mb-0">{category.limitRequest}</span>
                                     </td>
                                     <td className="align-middle text-center">
-                                        <span className="text-secondary text-xs font-weight-normal">{category.valueVariation}</span>
+                                        <span className="text-secondary text-xs font-weight-normal">{category.valueVariation}%</span>
                                     </td>
                                     <td className="text-center">
                                         <a onClick={() => deleteCategory(category.id)} className="btn btn-danger">Deletar</a>
